@@ -12,10 +12,10 @@ const Navbar = () => {
             <Container>
                 <Nav>
                     <Nav.Link to="/" as={NavLink}>
-                        Компания
-                    </Nav.Link>
-                    <Nav.Link to="/store" as={NavLink}>
                         Магазин
+                    </Nav.Link>
+                    <Nav.Link to="/home" as={NavLink}>
+                        Компания
                     </Nav.Link>
                     <Nav.Link to="/about" as={NavLink}>
                         О нас
