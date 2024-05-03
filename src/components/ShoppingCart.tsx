@@ -39,7 +39,7 @@ const ShoppingCart = ({isOpen}: ShoppingCart) => {
                     <div className="ms-auto fw-bold fs-5">
                         Total {formatCurrency(cartItems.reduce((acc, item) => {
                             const price = allItems.find(product => product?.id === item?.id)?.price
-                            acc += item.quantity * price
+                            acc += item?.quantity * price
                             return acc
                     }, 0))}
                     </div>
