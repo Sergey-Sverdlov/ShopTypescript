@@ -1,7 +1,7 @@
 const CURRENCY_FORMATTER = new Intl.NumberFormat(undefined, {
     currency: "USD", style: "currency"
 })
-const formatCurrency = (number: number) => {
+const formatCurrency = (number: number | undefined) => {
     return CURRENCY_FORMATTER.format(number)
 }
 
